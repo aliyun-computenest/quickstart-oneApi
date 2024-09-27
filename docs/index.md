@@ -47,14 +47,13 @@ One Api服务需要对ECS、VPC等资源进行访问和创建操作，若您使�
 ### 部署步骤
 
 
-1. 单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=One API 社区版)，进入服务实例部署界面。
+1. 单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=One%20API%20%E7%A4%BE%E5%8C%BA%E7%89%88)，进入服务实例部署界面。
 2. 根据界面提示，填写参数完成部署。
 ![img.png](img.png)
-![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
+![img_6.png](img_6.png)
 3. 设置完参数后，点击下一步确认订单，点击立即创建，等待服务实例创建完成。
 4. 服务实例创建成功后，进入服务实例详情页。在概览页可获取one-api登录信息。
 ![img_3.png](img_3.png)
 ![img_4.png](img_4.png)
-
    
