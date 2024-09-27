@@ -62,13 +62,12 @@ The estimated cost can be seen in real time when the instance is created. </p>
 <h3> Deployment steps </h3>
 
 <ol>
-<li> Click <a href = "https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=One API Community Edition"> Deployment Link </a> to go to the service instance deployment page. </li>
+<li> Click <a href = "https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=One%20API%20%E7%A4%BE%E5%8C%BA%E7%89%88"> Deployment Link </a> to go to the service instance deployment page. </li>
 <li> according to the interface prompt, fill in the parameters to complete the deployment.
 <img src="img.png" alt="img.png" />
 <img src="img_2.png" alt="img<em>2.png" />
 <img src="img_6.png" alt="img</em>6.png" /></li>
 <li> After setting the parameters, click Next to confirm the order, click Create Now, and wait for the service instance to be created. </li>
 <li> After the service instance is created, go to the service instance details page. one-api login information can be obtained on the overview page.
-<img src="img_3.png" alt="img<em>3.png" />
 <img src="img_4.png" alt="img</em>4.png" /></li>
 </ol>
