@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="计算巢是阿里云开放给企业应用服务商的服务管理平台。服务商能够在计算巢上发布私有化部署服务，为其客户提供云上软件一键部署的能力；同时也支持全托管模式的服务，赋能服务商托管其客户资源。">
+  <title>one-api服务实例部署文档 - Aliyun 计算巢 x One API</title>
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="css/theme.css">
+  
+
+  
+
+  
+  
+
+  
+    <script src="search/main.js"></script>
+  
+
+  
+
+  <script src="js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-inner">
+        <div class="logo">
+          <img src="./img/logo-2x.png">
+        </div>
+        <div class="nav-list">
+          <ul>
+          
+              <li><a href="#one-api">one-api服务实例部署文档</a></li>
+              
+                  <li><a href="#_1">概述</a></li>
+                  
+              
+                  <li><a href="#_2">计费说明</a></li>
+                  
+              
+                  <li><a href="#_3">部署架构</a></li>
+                  
+              
+                  <li><a href="#ram">RAM账号所需权限</a></li>
+                  
+              
+                  <li><a href="#_4">部署流程</a></li>
+                  
+                      <li class="li-h3"><a href="#_5">部署步骤</a></li>
+                  
+              
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="content theme-github">
+      
+      <div class="content-inner">        
+        
+        <h1 id="one-api">one-api服务实例部署文档</h1>
+<h2 id="_1">概述</h2>
+<p>one-api是一个开源的OpenAI 接口管理 &amp; 分发系统，支持 Azure、Anthropic Claude、Google PaLM 2 &amp; Gemini、智谱 ChatGLM、百度文心一言、讯飞星火认知、阿里通义千问、360 智脑以及腾讯混元等，可用于二次分发管理 key。
+详情请看 <a href="https://github.com/songquanpeng/one-api">one-api</a>.</p>
+<h2 id="_2">计费说明</h2>
+<p>one-api在计算巢上的费用主要涉及：</p>
+<p>所选vCPU与内存规格
+磁盘容量
+公网带宽
+计费方式包括：
+- 按量付费（小时）
+- 包年包月
+预估费用在创建实例时可实时看到。</p>
+<h2 id="_3">部署架构</h2>
+<p>One Api社区版是单机部署架构。</p>
+<h2 id="ram">RAM账号所需权限</h2>
+<p>One Api服务需要对ECS、VPC等资源进行访问和创建操作，若您使用RAM用户创建服务实例，需要在创建服务实例前，对使用的RAM用户的账号添加相应资源的权限。添加RAM权限的详细操作，请参见<a href="https://help.aliyun.com/document_detail/121945.html">为RAM用户授权</a>
+。所需权限如下表所示。</p>
+<table>
+<thead>
+<tr>
+<th>权限策略名称</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AliyunECSFullAccess</td>
+<td>管理云服务器服务（ECS）的权限</td>
+</tr>
+<tr>
+<td>AliyunVPCFullAccess</td>
+<td>管理专有网络（VPC）的权限</td>
+</tr>
+<tr>
+<td>AliyunROSFullAccess</td>
+<td>管理资源编排服务（ROS）的权限</td>
+</tr>
+<tr>
+<td>AliyunComputeNestUserFullAccess</td>
+<td>管理计算巢服务（ComputeNest）的用户侧权限</td>
+</tr>
+<tr>
+<td>AliyunCloudMonitorFullAccess</td>
+<td>管理云监控（CloudMonitor）的权限</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">部署流程</h2>
+<h3 id="_5">部署步骤</h3>
+<ol>
+<li>单击<a href="https://computenest.console.aliyun.com/service/instance/create/default?type=user&amp;ServiceName=One%20API%20%E7%A4%BE%E5%8C%BA%E7%89%88">部署链接</a>，进入服务实例部署界面。</li>
+<li>根据界面提示，填写参数完成部署。
+<img alt="img.png" src="img.png" />
+<img alt="img_2.png" src="img_2.png" />
+<img alt="img_6.png" src="img_6.png" /></li>
+<li>设置完参数后，点击下一步确认订单，点击立即创建，等待服务实例创建完成。</li>
+<li>服务实例创建成功后，进入服务实例详情页。在概览页可获取one-api登录信息。
+<img alt="img_4.png" src="img_4.png" /></li>
+</ol>
+<div style="margin-top: 20px;">
+    <footer>
+        <p>查看更多计算巢服务(https://computenest.aliyun.com)</p>
+    </footer>
+</div>
+        
+      </div>
+
+      <div class="copyrights">© 2009-2022 Aliyun.com 版权所有</div>
+    </div>
+  </div>
+  
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2024-10-09 03:09:30.893033+00:00
+  -->
+</body>
+</html>
