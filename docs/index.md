@@ -56,4 +56,10 @@ One Api服务需要对ECS、VPC等资源进行访问和创建操作，若您使�
 4. 服务实例创建成功后，进入服务实例详情页。在概览页可获取one-api登录信息。
 ![img_3.png](img_3.png)
 ![img_4.png](img_4.png)
+
+<div style="margin-top: 20px;">
+    <footer>
+        <p>查看更多计算巢服务(https://computenest.aliyun.com)</p>
+    </footer>
+</div>
    
